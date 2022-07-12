@@ -10,11 +10,11 @@ ContentfulModel.configure do |config|
     # Use `delivery_api` and `management_api` keys to limit to what API the settings
     # will apply. Useful because Delivery API is usually visitor facing, while Management
     # is used in background tasks that can run much longer. For example:
-    delivery_api: {
-      timeout_read: 6
-    },
-    management_api: {
-      timeout_read: 100
-    }
+  #   delivery_api: {
+  #     timeout_read: 6
+  #   },
+  #   management_api: {
+  #     timeout_read: 100
+  #   }
   }
 end
