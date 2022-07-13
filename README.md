@@ -1,24 +1,35 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Marley Spoon Recipes
 
-Things you may want to cover:
+A simple rails app that displays Marley Sppon recipes from data received through Contentful's Content Delivery API.
 
-* Ruby version
+## Technologies Used
 
-* System dependencies
+* Ruby on Rails: ruby version 3.0.2, Rails version 7.0.3
+* gems: active_model_serializers, activerecord-postgres-earthdistance, rspec, faker
 
-* Configuration
+## Setup/Installation Requirements
 
-* Database creation
+* if not present, install postgres
+* set up database: rails db:create, rails db:migrate
+* seed database with realtors: rails db:seed
+* run tests with spec
 
-* Database initialization
+## Improvements
 
-* How to run the test suite
+### Time
+* time zones aren't properly considered at the moment
 
-* Services (job queues, cache servers, search engines, etc.)
+### Realtor's calendar
+* a method to check the availabilty of the realtor should be added
 
-* Deployment instructions
+### Testing
+* the api needs request tests and better model tests
+* since I have never worked with rspec before, I was only able to write simple tests and tested the api with postman
 
-* ...
+### Service Object
+* the create action in appointments_controller should call a service object and not have all the logic itself
+
+### Authorization
+* in a next step, authorization should be added to realtors
