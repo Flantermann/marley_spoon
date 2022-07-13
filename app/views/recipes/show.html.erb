@@ -13,7 +13,7 @@
       <% unless @recipe.tags.nil? %>
         <% @recipe.tags.each do |tag|%>
           <div class="recipe-tag">
-            <%= tag.name %>
+            <%= tag.name.upcase %>
           </div>
         <% end %>
       <% end %>
