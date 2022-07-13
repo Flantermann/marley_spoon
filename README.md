@@ -2,7 +2,7 @@
 
 # Marley Spoon Recipes
 
-A simple rails app that displays Marley Sppon recipes from data received through Contentful's Content Delivery API.
+A simple rails app that displays Marley Spoon recipes from data received through Contentful's Content Delivery API.
 
 ## Technologies Used
 
@@ -13,7 +13,8 @@ A simple rails app that displays Marley Sppon recipes from data received through
 
 * bundle install
 * set environment variables in an .env file in the root directory, with these keys:
-```SPACE_ID=xxxxxx
+```
+SPACE_ID=xxxxxx
 ACCESS_TOKEN=xxxxxxx
 CONTENTFUL_ENVIRONMENT=master
 ```
