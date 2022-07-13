@@ -7,7 +7,7 @@ A simple rails app that displays Marley Spoon recipes from data received through
 ## Technologies Used
 
 * Ruby on Rails: ruby version 3.0.2, Rails version 7.0.3
-* gems: contentful, contentful_model, dotenv-rails, redcarpet
+* gems: contentful_model, dotenv-rails, redcarpet
 
 ## Setup/Installation Requirements
 
@@ -17,3 +17,5 @@ A simple rails app that displays Marley Spoon recipes from data received through
 * run `rails s` to start the application at http://localhost:3000/
 
 ## Improvements
+* the app was tested manually in the browser, but it would be good to add tests
+* the index page at the moment displays _all_ recipes. It could need pagination in the future
