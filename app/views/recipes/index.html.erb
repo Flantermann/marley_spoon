@@ -1,27 +1,15 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <title>Marley Spoon Recipes</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Coding Assignment for Marley Spoon"/>
-    <meta name="author" content="Franziska Lantermann"/>
-  </head>
-  <body>
-    <div class="banner">
-      <%= image_tag("logo") %>
-    </div>
-    <div class="container">
-      <h1>Recipes of the Week</h1>
-      <div class="recipes-grid">
-        <% @recipes.each do |recipe| %>
-          <div class="recipe-container">
-            <img src="<%= recipe.photo.url %>" class="recipe-photo"/>
-            <h3> <%= recipe.title %></h3>
-            <%= link_to "Learn more", recipe_path(recipe.id), class:"recipe-link"%>
-          </div>
-        <% end %>
+<div class="banner">
+  <%= image_tag("logo") %>
+</div>
+<div class="container">
+  <h1 class="recipes-header">Recipes of the Week</h1>
+  <div class="recipes-grid">
+    <% @recipes.each do |recipe| %>
+      <div class="recipe-container">
+        <img src="<%= recipe.photo.url %>" class="recipe-photo"/>
+        <h3> <%= recipe.title %></h3>
+        <%= link_to "Learn more", recipe_path(recipe.id), class:"recipe-link"%>
       </div>
-    </div>
-  </body>
-</html>
+    <% end %>
+  </div>
+</div>

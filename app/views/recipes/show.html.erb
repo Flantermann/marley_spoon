@@ -1,3 +1,19 @@
-<img src="<%= @recipe.photo.url %>"/>
-<h1><%= @recipe.title %></h1>
-<p><%= @recipe.description %></p>
+<div class="banner">
+  <%= image_tag("logo") %>
+</div>
+<div class="container">
+  <div class="recipe-detail">
+    <img src="<%= @recipe.photo.url %>" class="recipe-photo-detail"/>
+    <h2><%= @recipe.title %></h2>
+    <p><%= @recipe.description %></p>
+    <div class="tags">
+      <% unless @recipe.tags == nil %>
+        <% @recipe.tags.each do |tag|%>
+          <div class="recipe-tag">
+            <%= tag.name %>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>
