@@ -19,5 +19,5 @@ A simple rails app that displays Marley Spoon recipes from data received through
 * run `rails s` to start the application at http://localhost:3000/
 
 ## Improvements
-* since I am not yet familiar with rspec or mintest, the app was only tested manually in the browser
+* since I am not yet familiar with rspec or minitest, the app was only tested manually in the browser
 * the index page at the moment displays _all_ recipes, it could need pagination in the future
