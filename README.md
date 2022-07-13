@@ -11,6 +11,8 @@ A simple rails app that displays Marley Spoon recipes from data received through
 
 ## Setup/Installation Requirements
 
+* clone the repository `git clone https://github.com/Flantermann/marley_spoon.git`
+* open directoy
 * run `bundle install`
 * set environment variables in an .env file in the root directory, with the keys `SPACE_ID`,
 `ACCESS_TOKEN` and `CONTENTFUL_ENVIRONMENT`. You can find the values [here](https://gist.github.com/carpodaster/446e53d4a4b727f3fce1dfabe1f70967).
