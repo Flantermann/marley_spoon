@@ -5,7 +5,7 @@
   <div class="recipe-detail">
     <img src="<%= @recipe.photo.url %>" class="recipe-photo-detail"/>
     <h2><%= @recipe.title %></h2>
-    <p><%= @recipe.description %></p>
+    <p><%= markdown(@recipe.description) %></p>
     <% unless @recipe.chef.nil? %>
       <p>Chef: <%= @recipe.chef.name %></p>
     <% end %>
