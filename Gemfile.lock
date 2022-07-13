@@ -247,6 +247,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
+  contentful
   contentful_model
   debug
   dotenv-rails
@@ -254,6 +255,7 @@ DEPENDENCIES
   jbuilder
   puma (~> 5.0)
   rails (~> 7.0.3)
+  redcarpet
   rspec-rails
   sprockets-rails
   sqlite3 (~> 1.4)
